@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTaskActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/raleway_medium"
+        android:text="Task:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/raleway_extralight"
+        android:hint="Title:" />
+
+    <EditText
+        android:id="@+id/editTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/editTaskTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/raleway_extralight"
+        android:hint="Description:" />
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/editTaskDescription"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/raleway_extralight"
+        android:hint="Date:" />
+
+    <Switch
+        android:id="@+id/switchDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/editDate"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/raleway_extralight"
+        android:switchMinWidth="20dp"
+        android:switchPadding="10dp"
+        android:text="Done?" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/editDate"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp">
+
+        <Button
+            android:id="@+id/buttonChangeTask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="11"
+            android:background="@color/colorAccent"
+            android:elevation="11dp"
+            android:fadingEdgeLength="11dp"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="11"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#FA910303"
+            android:backgroundTintMode="add"
+            android:elevation="11dp"
+            android:fadingEdgeLength="11dp"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Delete"
+            android:textColor="#FAB31414" />
+    </TableRow>
+
+
+</RelativeLayout>
